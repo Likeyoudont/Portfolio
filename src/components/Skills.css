@@ -1,0 +1,103 @@
+.skills {
+  background: var(--bg-soft);
+}
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.skills__card {
+  padding: 30px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  transition: border-color 0.25s ease;
+}
+
+.skills__card:hover {
+  border-color: color-mix(in srgb, var(--accent) 50%, var(--border));
+}
+
+.skills__card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg);
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.skills__chip svg {
+  font-size: 1.1rem;
+  color: var(--accent);
+}
+
+.skills__chip:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+
+/* ===== Spoken languages ===== */
+.languages {
+  display: grid;
+  gap: 18px;
+}
+
+.language__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.language__name {
+  font-weight: 600;
+}
+
+.language__level {
+  color: var(--text-muted);
+}
+
+.language__track {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.language__fill {
+  height: 100%;
+  border-radius: inherit;
+  background: var(--gradient);
+}
+
+@media (max-width: 768px) {
+  .skills__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills__card {
+    padding: 24px;
+  }
+}

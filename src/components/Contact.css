@@ -1,0 +1,100 @@
+.contact {
+  position: relative;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 64px 48px;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  background:
+    radial-gradient(500px circle at 0% 0%, var(--accent-soft), transparent 70%),
+    radial-gradient(400px circle at 100% 100%, rgba(34, 195, 238, 0.1), transparent 70%),
+    var(--surface);
+  text-align: center;
+  overflow: hidden;
+}
+
+.contact__title {
+  margin-bottom: 18px;
+}
+
+.contact__text {
+  max-width: 34rem;
+  margin: 0 auto 36px;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+.contact__email {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 44px;
+}
+
+.contact__socials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  text-align: left;
+}
+
+.contact__social {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.contact__social:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.contact__social-icon {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.contact__social span {
+  flex: 1;
+  min-width: 0;
+}
+
+.contact__social strong {
+  display: block;
+  font-size: 0.95rem;
+}
+
+.contact__social small {
+  display: block;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.contact__social-arrow {
+  color: var(--text-muted);
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.contact__social:hover .contact__social-arrow {
+  color: var(--accent);
+  transform: translate(2px, -2px);
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 48px 22px;
+  }
+
+  .contact__socials {
+    grid-template-columns: 1fr;
+  }
+}

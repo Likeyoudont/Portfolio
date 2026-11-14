@@ -1,0 +1,86 @@
+.journey {
+  background: var(--bg-soft);
+}
+
+.timeline {
+  position: relative;
+  list-style: none;
+  max-width: 760px;
+  display: grid;
+  gap: 28px;
+}
+
+/* The vertical line connecting the dots */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 21px;
+  top: 10px;
+  bottom: 10px;
+  width: 2px;
+  background: linear-gradient(var(--accent), var(--accent-2), transparent);
+}
+
+.timeline__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 24px;
+}
+
+.timeline__dot {
+  position: relative; /* sits above the line */
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--gradient);
+  color: #fff;
+  box-shadow: 0 0 0 6px var(--bg-soft);
+}
+
+.timeline__card {
+  padding: 24px 28px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  transition: border-color 0.25s ease;
+}
+
+.timeline__card:hover {
+  border-color: var(--accent);
+}
+
+.timeline__period {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.timeline__title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+
+.timeline__place {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.timeline__description {
+  color: var(--text-muted);
+}
+
+@media (max-width: 640px) {
+  .timeline__item {
+    gap: 16px;
+  }
+
+  .timeline__card {
+    padding: 20px;
+  }
+}
