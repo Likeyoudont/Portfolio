@@ -25,5 +25,10 @@ npm run lint     # check the code with oxlint
 
 ## Deploy
 
-Push to GitHub, then import the repo on [Vercel](https://vercel.com) or [Netlify](https://netlify.com).
-Build command: `npm run build`, output folder: `dist`.
+The site is live at https://likeyoudont.github.io/Portfolio/.
+
+Every push to `main` runs `.github/workflows/deploy.yml`, which builds the site and publishes `dist/` to GitHub Pages.
+In the repo settings, **Pages → Source** must be set to **GitHub Actions**.
+
+`base: '/Portfolio/'` in `vite.config.js` must match the repo name. If you rename the repo
+or move to Vercel/Netlify (served from `/`), update or remove it.
