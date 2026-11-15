@@ -1,34 +1,94 @@
-# Issam Abdelhak — Portfolio
+<div align="center">
 
-Personal portfolio built with React (Vite), plain CSS and Motion for animations.
+<img src="src/assets/profile.jpg" alt="Issam Abdelhak" width="160" />
 
-## Run it
+# ABDELHAK ISSAM
 
-```bash
-npm install
-npm run dev      # local dev server at http://localhost:5173
-npm run build    # production build in dist/
-npm run preview  # preview the production build
-npm run lint     # check the code with oxlint
-```
+**Full-Stack Web Developer · Technicien Spécialisé (OFPPT)**
 
-## Where things are
+📍 Salé, Morocco
 
-| What you want to change | File |
+📧 **[issam.abdelhak19@gmail.com](mailto:issam.abdelhak19@gmail.com)** &nbsp;·&nbsp; 📞 **[+212 6 31 08 41 34](tel:+212631084134)**
+
+</div>
+
+---
+
+## 👋 About me
+
+I'm a full-stack web developer in training at **OFPPT in Salé**, where I'm studying to become a
+**Technicien Spécialisé in full-stack development**. I build web apps from the database to the
+interface with PHP, Laravel, JavaScript and React.
+
+Before moving into development, I spent **two years studying English at Mohammed First University
+in Oujda**. That background shapes how I work: I write clear documentation, explain technical ideas
+simply, and work comfortably with teams in English and French.
+
+I like building practical things: platforms that connect people, interfaces that match the design
+exactly, and small tools that solve a real problem.
+
+---
+
+## 🛠️ Skills
+
+- **Languages:** JavaScript · PHP · Python · HTML · CSS · MySQL
+- **Frameworks & Libraries:** React · Laravel · Bootstrap
+- **Tools:** Git · GitHub · GitLab (CI / Pages) · Photoshop
+
+---
+
+## 🌍 Languages
+
+| Language | Level |
 |---|---|
-| Name, bio, email, social links, skills, languages, education | `src/data/profile.js` |
-| Projects (add / edit / remove) | `src/data/projects.js` |
-| Profile photo | `src/assets/profile.jpg` |
-| Colors, fonts, buttons (whole site) | `src/index.css` (CSS variables at the top) |
-| A single section | `src/components/<Section>.jsx` + `.css` |
-| Page title, SEO tags, fonts | `index.html` |
+| 🇲🇦 Arabic | Native |
+| 🇬🇧 English | Fluent (2 years of university English studies) |
+| 🇫🇷 French | Fluent |
+| 🇪🇸 Spanish | Learning |
 
-## Deploy
+---
 
-The site is live at https://likeyoudont.github.io/Portfolio/.
+## 🎓 Education
 
-Every push to `main` runs `.github/workflows/deploy.yml`, which builds the site and publishes `dist/` to GitHub Pages.
-In the repo settings, **Pages → Source** must be set to **GitHub Actions**.
+**Technicien Spécialisé, Full-Stack Development** — *In progress*<br>
+OFPPT, Salé<br>
+Full-stack web development: JavaScript, React, PHP, Laravel, MySQL, Git and deployment.
 
-`base: '/Portfolio/'` in `vite.config.js` must match the repo name. If you rename the repo
-or move to Vercel/Netlify (served from `/`), update or remove it.
+**English Studies** — *2 years*<br>
+Mohammed First University (Université Mohammed Premier), Oujda<br>
+English language and literature, which built my communication and writing skills.
+
+---
+
+## 🚀 Projects
+
+### [Khedma](https://github.com/Likeyoudont/Khedma)
+A platform that connects clients with workers. Clients describe the job they need done and find a
+worker who can do it.
+
+`PHP` `Laravel` `Blade` `JavaScript`
+
+### [Perfect Pixel](https://github.com/Likeyoudont/Driss-Challenge)
+A pixel-perfect rebuild of a design mockup. I measured every size and spacing in Photoshop so the
+page matches the design exactly.
+
+`HTML` `CSS` `Photoshop`
+
+### QR Code Generator
+A web app that turns any text or link into a QR code you can download and share.
+
+`JavaScript` `HTML` `CSS`
+
+---
+
+<div align="center">
+
+### 📬 Let's work together
+
+I'm open to internships, collaborations and freelance work.
+
+📧 **[issam.abdelhak19@gmail.com](mailto:issam.abdelhak19@gmail.com)** &nbsp;·&nbsp; 📞 **[+212 6 31 08 41 34](tel:+212631084134)**
+
+<sub>This repository is the source code of my portfolio website, built with React, Vite and plain CSS.</sub>
+
+</div>
